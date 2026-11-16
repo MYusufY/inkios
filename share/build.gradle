@@ -1,0 +1,38 @@
+plugins {
+    id "com.android.application"
+}
+
+android {
+    namespace "tech.tachion.inkios.share"
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "tech.tachion.inkios.share"
+        minSdk 19
+        targetSdk 19
+        versionCode 1
+        versionName "0.1.0"
+        ndk { abiFilters "armeabi-v7a", "arm64-v8a" }
+    }
+
+    buildFeatures {
+        buildConfig true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    lint {
+        abortOnError false
+        checkReleaseBuilds false
+    }
+}
+
+apply from: rootProject.file("gradle/release.gradle")
+
+dependencies {
+    implementation project(":core")
+    implementation "com.google.zxing:core:3.3.3"
+}

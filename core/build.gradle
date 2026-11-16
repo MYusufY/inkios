@@ -1,0 +1,25 @@
+plugins {
+    id "com.android.library"
+}
+
+android {
+    namespace "tech.tachion.inkios.core"
+    compileSdk 34
+
+    defaultConfig {
+        minSdk 19
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    lint {
+        abortOnError false
+    }
+}
+
+dependencies {
+    api "org.conscrypt:conscrypt-android:2.5.2"
+}

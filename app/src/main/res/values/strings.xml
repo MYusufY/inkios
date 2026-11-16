@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Inkios</string>
+    <string name="key_service_label">Inkios light button</string>
+    <string name="key_service_description">Hold the light button to go Home, double-press it for recent apps.</string>
+    <string name="recents_label">Recent apps</string>
+</resources>

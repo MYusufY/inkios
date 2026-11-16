@@ -1,0 +1,71 @@
+quote|A reader lives a thousand lives before he dies. The man who never reads lives only one.|George R. R. Martin
+quote|There is no friend as loyal as a book.|Ernest Hemingway
+quote|Bir kitap, insanın içinde donmuş denizi kıran bir balta olmalı.|Franz Kafka
+quote|So many books, so little time.|Frank Zappa
+quote|İnsan sevdiği zaman, kalbinin bütün kapıları açılır.|Sabahattin Ali, Kürk Mantolu Madonna
+quote|The more that you read, the more things you will know.|Dr. Seuss
+quote|Okumak, insanın kendisiyle yaptığı en uzun yolculuktur.|Anonim
+quote|We read to know we are not alone.|C. S. Lewis (attributed)
+quote|Ne kadar bilirsen bil, söylediklerin karşındakinin anlayabildiği kadardır.|Mevlânâ
+quote|It is what you read when you don't have to that determines what you will be when you can't help it.|Oscar Wilde
+quote|Gelin tanış olalım, işi kolay kılalım; sevelim sevilelim, dünya kimseye kalmaz.|Yunus Emre
+quote|Not all those who wander are lost.|J. R. R. Tolkien
+quote|Hayatta en hakiki mürşit ilimdir.|Mustafa Kemal Atatürk
+quote|I have always imagined that Paradise will be a kind of library.|Jorge Luis Borges
+quote|Ya olduğun gibi görün, ya göründüğün gibi ol.|Mevlânâ
+quote|A book must be the axe for the frozen sea within us.|Franz Kafka
+quote|Kitapsız büyüyen bir çocuk, elleri cebinde büyüyen bir çocuğa benzer.|Anonim
+quote|Until I feared I would lose it, I never loved to read. One does not love breathing.|Harper Lee
+quote|Yaşamak bir ağaç gibi tek ve hür ve bir orman gibi kardeşçesine.|Nazım Hikmet
+quote|Reading is to the mind what exercise is to the body.|Joseph Addison
+quote|The world was hers for the reading.|Betty Smith
+quote|One must always be careful of books, and what is inside them, for words have the power to change us.|Cassandra Clare
+quote|Books are a uniquely portable magic.|Stephen King
+quote|Some books should be tasted, some devoured, but only a few should be chewed and digested thoroughly.|Francis Bacon
+quote|Kendini bilmek, her bilginin başıdır.|Yunus Emre
+quote|You can never get a cup of tea large enough or a book long enough to suit me.|C. S. Lewis
+quote|There is more treasure in books than in all the pirate's loot on Treasure Island.|Walt Disney
+quote|Today a reader, tomorrow a leader.|Margaret Fuller
+quote|Bir kitap okudum, hayatım değişti.|Orhan Pamuk, Yeni Hayat
+quote|Once you learn to read, you will be forever free.|Frederick Douglass
+quote|Sessizlik, bazen en güzel cevaptır.|Anonim
+quote|Words are, in my not-so-humble opinion, our most inexhaustible source of magic.|J. K. Rowling
+fact|Honey never spoils. Edible honey has been found in Egyptian tombs over 3,000 years old.|Fun fact
+fact|E-ink screens use no power to keep showing an image, only to change it.|Fun fact
+fact|The word "bookworm" originally meant insect larvae that bore through books.|Fun fact
+fact|Octopuses have three hearts, and two of them stop beating when they swim.|Fun fact
+fact|Bananas are berries. Strawberries are not.|Fun fact
+fact|İstanbul is the only major city in the world that spans two continents.|Fun fact
+fact|A day on Venus is longer than its year.|Fun fact
+fact|The Library of Alexandria may have held over 400,000 scrolls.|Fun fact
+fact|Sea otters hold hands while they sleep so they don't drift apart.|Fun fact
+fact|Turkish coffee preparation is on UNESCO's list of Intangible Cultural Heritage.|Fun fact
+fact|Guinness lists Proust's "In Search of Lost Time" as the longest novel: about 1.2 million words.|Fun fact
+fact|Wombat droppings are cube-shaped.|Fun fact
+fact|Göbekli Tepe in Şanlıurfa is about 11,500 years old, older than Stonehenge and the pyramids.|Fun fact
+fact|There are more possible chess games than atoms in the observable universe.|Fun fact
+fact|A group of owls is called a parliament.|Fun fact
+fact|Cappadocia's underground city of Derinkuyu could shelter around 20,000 people.|Fun fact
+fact|The first novel ever written is often said to be "The Tale of Genji", from 11th-century Japan.|Fun fact
+fact|Your brain uses about 20% of your body's energy, even though it's only 2% of your weight.|Fun fact
+fact|The tulip came to the Netherlands from the Ottoman Empire in the 16th century.|Fun fact
+fact|Butterflies taste with their feet.|Fun fact
+fact|The Go board has 361 points, and more possible positions than atoms in the universe.|Fun fact
+fact|Lightning strikes the Earth around 40 to 50 times every second.|Fun fact
+fact|Piri Reis drew his famous world map in 1513, including part of the Americas.|Fun fact
+fact|A sudoku has at least 17 clues if it is to have only one solution.|Fun fact
+joke|I'm reading a book about anti-gravity. It's impossible to put down.|A little joke
+joke|Why did the book go to the doctor? It had a bad case of loose pages.|A little joke
+joke|I told my e-reader a joke. It didn't refresh my sense of humor.|A little joke
+joke|Why don't scientists trust atoms? Because they make up everything.|A little joke
+joke|I used to be a banker, but I lost interest.|A little joke
+joke|What do you call a fake noodle? An impasta.|A little joke
+joke|I'm on a seafood diet. I see food and I eat it.|A little joke
+joke|Why was the math book sad? It had too many problems.|A little joke
+joke|Parallel lines have so much in common. It's a shame they'll never meet.|A little joke
+joke|The librarian said the library was getting rid of its books on theatre. Not a dramatic change.|A little joke
+joke|I asked the library for books about paranoia. The librarian whispered, "They're right behind you."|A little joke
+joke|Why did the scarecrow win an award? He was outstanding in his field.|A little joke
+joke|Temel'e sormuşlar: En çok hangi kitabı seversin? Banka cüzdanını, demiş.|Bir fıkra
+joke|I would tell you a joke about paper, but it's tearable.|A little joke
+joke|What's a book's favourite piece of clothing? A dust jacket.|A little joke

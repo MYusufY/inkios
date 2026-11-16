@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+<defs><clipPath id="stem"><rect x="452" y="392" width="120" height="480" rx="60"/></clipPath></defs>
+<rect width="1024" height="1024" rx="230" fill="#000000"/>
+<path d="M 460.0385 242.0000 A 60 60 0 1 0 563.9615 242.0000 L 512 152 Z" fill="#ffffff"/>
+<g clip-path="url(#stem)">
+<rect x="452" y="392" width="120" height="32" fill="#ffffff"/>
+<rect x="452" y="424" width="120" height="32" fill="#eeeeee"/>
+<rect x="452" y="456" width="120" height="32" fill="#dddddd"/>
+<rect x="452" y="488" width="120" height="32" fill="#cccccc"/>
+<rect x="452" y="520" width="120" height="32" fill="#bbbbbb"/>
+<rect x="452" y="552" width="120" height="32" fill="#aaaaaa"/>
+<rect x="452" y="584" width="120" height="32" fill="#999999"/>
+<rect x="452" y="616" width="120" height="32" fill="#888888"/>
+<rect x="452" y="648" width="120" height="32" fill="#777777"/>
+<rect x="452" y="680" width="120" height="32" fill="#666666"/>
+<rect x="452" y="712" width="120" height="32" fill="#555555"/>
+<rect x="452" y="744" width="120" height="32" fill="#444444"/>
+<rect x="452" y="776" width="120" height="32" fill="#333333"/>
+<rect x="452" y="808" width="120" height="32" fill="#222222"/>
+<rect x="452" y="840" width="120" height="32" fill="#111111"/>
+</g>
+</svg>

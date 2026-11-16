@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>Send to Inkios</title>
+<style>
+  @font-face { font-family: Inter; font-weight: 400; src: url(/fonts/Inter-Regular.ttf); }
+  @font-face { font-family: Inter; font-weight: 500; src: url(/fonts/Inter-Medium.ttf); }
+  @font-face { font-family: Inter; font-weight: 600; src: url(/fonts/Inter-SemiBold.ttf); }
+  @font-face { font-family: Inter Display; font-weight: 700; src: url(/fonts/InterDisplay-Bold.ttf); }
+  @font-face { font-family: Inter Display; font-weight: 600; src: url(/fonts/InterDisplay-SemiBold.ttf); }
+
+  :root {
+    --bg: #f2f2f7; --card: #ffffff; --ink: #000000; --secondary: #6c6c70; --tertiary: #aeaeb2;
+    --sep: #e5e5ea; --fill: #e9e9ee; --accent: #000000; --accent-ink: #ffffff; --danger: #d70015;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #000000; --card: #1c1c1e; --ink: #ffffff; --secondary: #98989f; --tertiary: #636366;
+      --sep: #38383a; --fill: #2c2c2e; --accent: #ffffff; --accent-ink: #000000; --danger: #ff453a;
+    }
+  }
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  html, body { margin: 0; background: var(--bg); color: var(--ink); }
+  body { font: 400 17px/1.4 Inter, -apple-system, system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  main { max-width: 640px; margin: 0 auto; padding: calc(28px + env(safe-area-inset-top)) 16px 48px; }
+
+  header { display: flex; align-items: center; gap: 14px; margin-bottom: 6px; }
+  .mark { width: 44px; height: 44px; flex: none; }
+  @media (prefers-color-scheme: dark) { .mark { filter: invert(1); } }
+  h1 { font: 700 34px/1.1 "Inter Display", Inter, system-ui, sans-serif; letter-spacing: -0.02em; margin: 0; }
+  .lead { color: var(--secondary); margin: 8px 0 24px; }
+
+  .drop {
+    display: flex; flex-direction: column; align-items: center; gap: 14px; text-align: center;
+    background: var(--card); border: 2px dashed var(--sep); border-radius: 22px; padding: 34px 20px;
+    transition: border-color .15s, background .15s;
+  }
+  .drop.over { border-color: var(--ink); }
+  .drop p { margin: 0; color: var(--secondary); font-size: 15px; }
+  .button {
+    appearance: none; border: 0; border-radius: 999px; background: var(--accent); color: var(--accent-ink);
+    font: 600 17px Inter, system-ui, sans-serif; padding: 13px 26px; cursor: pointer;
+  }
+  .button:active { opacity: .7; }
+  input[type=file] { display: none; }
+
+  h2 { font: 600 20px "Inter Display", Inter, system-ui, sans-serif; margin: 32px 4px 10px; }
+  .list { background: var(--card); border-radius: 18px; overflow: hidden; }
+  .row { display: flex; align-items: center; gap: 12px; padding: 13px 16px; border-top: 1px solid var(--sep); min-height: 60px; }
+  .row:first-child { border-top: 0; }
+  .icon {
+    width: 34px; height: 44px; flex: none; border-radius: 5px; background: var(--fill);
+    display: grid; place-items: center; font: 600 9px Inter, sans-serif; color: var(--secondary); text-transform: uppercase;
+  }
+  .meta { flex: 1; min-width: 0; }
+  .name { font-weight: 500; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; word-break: break-word; }
+  .sub { color: var(--secondary); font-size: 13px; margin-top: 2px; }
+  .bar { height: 4px; border-radius: 2px; background: var(--fill); margin-top: 7px; overflow: hidden; }
+  .bar > i { display: block; height: 100%; width: 0; background: var(--ink); transition: width .2s; }
+  .act { flex: none; display: flex; gap: 6px; }
+  .act a, .act button {
+    appearance: none; border: 0; background: var(--fill); color: var(--ink); border-radius: 999px;
+    font: 600 14px Inter, sans-serif; padding: 7px 13px; text-decoration: none; cursor: pointer;
+  }
+  .act .del { color: var(--danger); }
+  .empty { padding: 22px 16px; color: var(--secondary); text-align: center; }
+  footer { color: var(--tertiary); font-size: 13px; text-align: center; margin-top: 30px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <svg class="mark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+<defs><clipPath id="stemclip"><rect x="452" y="392" width="120" height="480" rx="60"/></clipPath></defs>
+<rect width="1024" height="1024" rx="230" fill="#000000"/>
+<path d="M 460.0385 242.0000 A 60 60 0 1 0 563.9615 242.0000 L 512 152 Z" fill="#ffffff"/>
+<g clip-path="url(#stemclip)">
+<rect x="452" y="392" width="120" height="32" fill="#ffffff"/>
+<rect x="452" y="424" width="120" height="32" fill="#eeeeee"/>
+<rect x="452" y="456" width="120" height="32" fill="#dddddd"/>
+<rect x="452" y="488" width="120" height="32" fill="#cccccc"/>
+<rect x="452" y="520" width="120" height="32" fill="#bbbbbb"/>
+<rect x="452" y="552" width="120" height="32" fill="#aaaaaa"/>
+<rect x="452" y="584" width="120" height="32" fill="#999999"/>
+<rect x="452" y="616" width="120" height="32" fill="#888888"/>
+<rect x="452" y="648" width="120" height="32" fill="#777777"/>
+<rect x="452" y="680" width="120" height="32" fill="#666666"/>
+<rect x="452" y="712" width="120" height="32" fill="#555555"/>
+<rect x="452" y="744" width="120" height="32" fill="#444444"/>
+<rect x="452" y="776" width="120" height="32" fill="#333333"/>
+<rect x="452" y="808" width="120" height="32" fill="#222222"/>
+<rect x="452" y="840" width="120" height="32" fill="#111111"/>
+</g>
+</svg>
+    <h1>Send to Inkios</h1>
+  </header>
+  <p class="lead">Books you send appear in the <b>Books</b> folder on your e-reader.</p>
+
+  <label class="drop" id="drop">
+    <input type="file" id="pick" multiple
+           accept=".epub,.pdf,.mobi,.azw,.azw3,.fb2,.djvu,.cbz,.cbr,.txt,.rtf,.doc,.docx,.html,.htm,.chm">
+    <span class="button">Choose books</span>
+    <p>or drop EPUB, PDF, MOBI, FB2, DjVu, CBZ or TXT files here</p>
+  </label>
+
+  <section id="sending" hidden>
+    <h2>Sending</h2>
+    <div class="list" id="queue"></div>
+  </section>
+
+  <h2>On your e-reader</h2>
+  <div class="list" id="books"><div class="empty">Loading…</div></div>
+
+  <footer>Inkios Share · works only on your Wi-Fi · by Tachion</footer>
+</main>
+<script>
+(function () {
+  var key = new URLSearchParams(location.search).get('k') || '';
+  var $ = function (id) { return document.getElementById(id); };
+
+  function fmt(n) {
+    if (n < 1024) return n + ' B';
+    if (n < 1048576) return (n / 1024).toFixed(0) + ' KB';
+    return (n / 1048576).toFixed(1) + ' MB';
+  }
+  function ext(name) { var i = name.lastIndexOf('.'); return i > 0 ? name.slice(i + 1, i + 5) : 'file'; }
+  function el(tag, cls, text) { var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
+  function api(path, name) { return '/api/' + path + '?k=' + encodeURIComponent(key) + (name != null ? '&name=' + encodeURIComponent(name) : ''); }
+
+  function row(name, sub) {
+    var r = el('div', 'row'), m = el('div', 'meta');
+    r.appendChild(el('div', 'icon', ext(name)));
+    m.appendChild(el('div', 'name', name));
+    var s = el('div', 'sub', sub);
+    m.appendChild(s);
+    r.appendChild(m);
+    return { row: r, meta: m, sub: s };
+  }
+
+  function loadBooks() {
+    fetch(api('list')).then(function (r) { return r.json(); }).then(function (list) {
+      var box = $('books');
+      box.innerHTML = '';
+      if (!list.length) { box.appendChild(el('div', 'empty', 'No books yet. Send one!')); return; }
+      list.forEach(function (b) {
+        var x = row(b.name, fmt(b.size) + ' · ' + new Date(b.modified).toLocaleDateString());
+        var act = el('div', 'act');
+        var dl = el('a', null, 'Save');
+        dl.href = api('file', b.name);
+        var del = el('button', 'del', 'Delete');
+        del.onclick = function () {
+          if (!confirm('Delete “' + b.name + '” from your e-reader?')) return;
+          fetch(api('delete', b.name), { method: 'POST' }).then(loadBooks);
+        };
+        act.appendChild(dl); act.appendChild(del);
+        x.row.appendChild(act);
+        box.appendChild(x.row);
+      });
+    }).catch(function () { $('books').innerHTML = '<div class="empty">Can’t reach your e-reader. Is Share still open?</div>'; });
+  }
+
+  var queue = [], busy = false;
+  function enqueue(files) {
+    $('sending').hidden = false;
+    Array.prototype.forEach.call(files, function (f) {
+      var x = row(f.name, 'Waiting · ' + fmt(f.size));
+      var bar = el('div', 'bar'), fill = el('i');
+      bar.appendChild(fill); x.meta.appendChild(bar);
+      $('queue').appendChild(x.row);
+      queue.push({ file: f, sub: x.sub, fill: fill });
+    });
+    next();
+  }
+  function next() {
+    if (busy || !queue.length) return;
+    busy = true;
+    var job = queue.shift(), xhr = new XMLHttpRequest();
+    xhr.open('PUT', api('upload', job.file.name));
+    xhr.upload.onprogress = function (e) {
+      if (!e.lengthComputable) return;
+      var p = Math.round(e.loaded * 100 / e.total);
+      job.fill.style.width = p + '%';
+      job.sub.textContent = p + '% · ' + fmt(e.loaded) + ' of ' + fmt(e.total);
+    };
+    xhr.onload = function () {
+      var ok = xhr.status === 200;
+      job.fill.style.width = '100%';
+      job.sub.textContent = ok ? 'Sent ✓' : 'Failed (' + xhr.status + ')';
+      busy = false; loadBooks(); next();
+    };
+    xhr.onerror = function () { job.sub.textContent = 'Failed: connection lost'; busy = false; next(); };
+    xhr.send(job.file);
+  }
+
+  $('pick').addEventListener('change', function (e) { enqueue(e.target.files); e.target.value = ''; });
+  var drop = $('drop');
+  ['dragenter', 'dragover'].forEach(function (t) { drop.addEventListener(t, function (e) { e.preventDefault(); drop.classList.add('over'); }); });
+  ['dragleave', 'drop'].forEach(function (t) { drop.addEventListener(t, function (e) { e.preventDefault(); drop.classList.remove('over'); }); });
+  drop.addEventListener('drop', function (e) { if (e.dataTransfer.files.length) enqueue(e.dataTransfer.files); });
+
+  loadBooks();
+})();
+</script>
+</body>
+</html>

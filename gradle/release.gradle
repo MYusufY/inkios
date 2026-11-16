@@ -1,0 +1,24 @@
+def keystoreFile = rootProject.file("keystore.properties")
+
+android {
+    signingConfigs {
+        release {
+            if (keystoreFile.exists()) {
+                def p = new Properties()
+                keystoreFile.withInputStream { p.load(it) }
+                storeFile file(p["storeFile"])
+                storePassword p["storePassword"]
+                keyAlias p["keyAlias"]
+                keyPassword p["keyPassword"]
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            shrinkResources false
+            if (keystoreFile.exists()) signingConfig signingConfigs.release
+        }
+    }
+}
